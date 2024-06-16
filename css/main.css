@@ -44,7 +44,18 @@ body {
 }
 
 
+#beta-download-section {
+  display: block;
+  align-items: center;
+}
 
+#beta-download-section img {
+  max-width: 150px; /* Ajusta este valor según el tamaño deseado */
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+}
 
 a,
 a:visited {
@@ -2431,13 +2442,26 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
  *
  * ------------------------------------------------------------------- */
 
-#download {
+ #download {
+  display: flex;
+  justify-content: flex-end; /* Alinea los elementos al final (derecha) */
+  align-items: center; /* Centra los elementos verticalmente, opcional */
   background: #FFFFFF;
   color: #da8651;
-  padding-top: 12rem;
-  padding-bottom: 12rem;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
   text-align: center;
 }
+
+.imagen-grande-derecha {
+  max-width: 38%; /* Ajusta este valor según el tamaño deseado */
+  height: 38%; /* Para mantener la proporción de la imagen */
+  margin-left: 5%; 
+  margin-right: 10%;
+  /* Añade espacio a la izquierda de la imagen */
+}
+
+
 
 #download h1 {
   color: #000000;
