@@ -121,7 +121,7 @@ p.lead {
   font-family: "muli-light", sans-serif;
   font-size: 2.1rem;
   line-height: 1.857;
-  color: #ababab;
+  color: #ffffff;
   margin-bottom: 3.6rem;
 }
 
@@ -1445,10 +1445,9 @@ h1.intro-header-v2::before {
 .home-image-right {
   display: block;
   position: absolute;
+  margin-right: 10%;
   right: 0;
-  top: -14.7%;
-
-  padding-top: 21rem;
+  top: -8.7%;
   z-index: 500;
   width: 60.3%;
   text-align: right;
@@ -1456,7 +1455,7 @@ h1.intro-header-v2::before {
 
 .home-image-right img {
   vertical-align: bottom;
-  width: 75%;
+  width: 60%;
 }
 
 
@@ -2252,7 +2251,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   font-family: "muli-regular", sans-serif;
   font-size: 3.2rem;
   line-height: 1.5;
-  color: #a1a1a1;
+  color: #ffffff;
 }
 
 #testimonial-slider p::before,
@@ -2356,7 +2355,9 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 #testimonial-slider .owl-dots .owl-dot {
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  *display{
+    display: inline, block;
+  };
 }
 
 #testimonial-slider .owl-dots .owl-dot span {
@@ -2519,7 +2520,7 @@ footer {
   padding-bottom: 4.2rem;
   font-size: 1.5rem;
   line-height: 2.7rem;
-  color: rgba(255, 255, 255, 0.25);
+  color: rgb(255, 255, 255);
 }
 
 footer a,
@@ -2539,13 +2540,26 @@ footer h4 {
   margin-bottom: 2.4rem;
   position: relative;
 }
+#productvideo {
+  background-color: #C67C4E; /* O el color de fondo que prefieras */
+}
+#productvideo .col-full {
+  display: flex;
+  flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+  align-items: center; /* Centra los elementos horizontalmente */
+  text-align: center; /* Centra el texto del título */
+  padding: 20px; /* Añade algo de espacio alrededor del contenido */
+}
+#productvideo h2 {
+  margin-top: 0; /* Elimina el margen superior del título si es necesario */
+}
 
 footer h4::before {
   content: "";
   display: block;
   width: 120px;
   height: 1px;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgb(153, 146, 146);
   position: absolute;
   left: 0;
   bottom: 0;
@@ -2562,7 +2576,7 @@ footer ul li {
 
 footer ul a,
 footer ul a:visited {
-  color: rgba(255, 255, 255, 0.25);
+  color: rgb(255, 255, 255);
 }
 
 .footer-logo {
